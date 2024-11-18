@@ -1,0 +1,4 @@
+nischay@ubuntuNischay:~/parser$ bison -d parser.y
+nischay@ubuntuNischay:~/parser$ flex lexer.l
+nischay@ubuntuNischay:~/parser$ gcc -o parser parser.tab.c lex.yy.c -lfl
+nischay@ubuntuNischay:~/parser$ ./parser
